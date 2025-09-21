@@ -13,16 +13,20 @@ Proyek ini membangun model machine learning untuk **klasifikasi kondisi lingkung
 ---
 
 ## 📂 Struktur Repository  
+```bash
 bme-sensor-classification/
 ├── data/
-│   └── smart_farm_zoning_dataset.csv  # Dataset utama
+│   └── smart_farm_zoning_dataset.csv  # Dataset utama untuk proyek
 │
 ├── notebooks/
-│   ├── exploration.ipynb              # Notebook untuk eksplorasi data
-│   ├── knn_notebook.ipynb             # Notebook untuk training dan evaluasi model KNN
-│   ├── tflite_smart_farm_model.h5     # Model yang dilatih (format H5)
-│   ├── tflite_smart_farm_model.tflite # Model yang dikonversi ke TensorFlow Lite
-│   └── tfliteSmartFarm.ipynb          # Notebook untuk konversi model ke TFLite
+│   ├── exploration.ipynb              # Notebook untuk eksplorasi dan analisis data
+│   ├── knn_notebook.ipynb             # Notebook utama untuk training & evaluasi model KNN
+│   ├── KNNSmartFarm.ipynb             # Notebook eksperimen tambahan dengan model KNN dan pipeline
+│   ├── KNNModel.py                    # Implementasi kelas model KNN
+│   ├── knn_model_smart_farm.pkl       # Model KNN yang sudah dilatih (format pickle)
+│   ├── tfliteSmartFarm.ipynb          # Notebook untuk proses konversi model ke TFLite
+│   ├── tflite_smart_farm_model.h5     # Model yang sudah dilatih (dalam format H5)
+│   └── tflite_smart_farm_model.tflite # Model yang dikonversi ke TensorFlow Lite
 │
-├── requirements.txt                   # Daftar dependensi Python
+├── requirements.txt                   # Daftar dependensi Python yang dibutuhkan
 └── README.md                          # Berkas ini
